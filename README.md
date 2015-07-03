@@ -3,7 +3,7 @@ Adding many number of virtual hosts is a teadous task to do. This batch script a
 a user to input virtual domain name and document root, and then adds all the required configuartion itself. 
 
 #How to use it?
-Just run it as a Administrator. 
+Download wamp-vhost-creator.bat and run it as a Administrator. 
 
 If you are running this script for the first time:
 
