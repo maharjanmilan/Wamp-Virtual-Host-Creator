@@ -24,9 +24,6 @@ if NOT %errorLevel% == 0 (
     exit
 )
 
-set hosts= C:\Windows\System32\Drivers\etc\hosts
-set httpdconf=D:\wamp\bin\apache\apache2.4.9\conf\extra\httpd-vhosts.conf
-
 GOTO :inputdomain
 
 :inputdomainerror
