@@ -20,6 +20,7 @@ REM Checking Administrative permission
 net session >nul 2>&1
 if NOT %errorLevel% == 0 (
     echo Please run this script as an administrator
+	echo "%PROCESSOR_ARCHITECTURE%"
     pause
     exit
 )
@@ -65,10 +66,16 @@ echo ^</VirtualHost^>
 
 echo "%domain% mapped to %documentroot%"
 
-REM Restart Apache
+REM Check the OS bit and Restart Wamp server accordingly
 
+IF EXIST "%PROGRAMFILES(X86)%" (GOTO 64BIT) ELSE (GOTO 32BIT)
+
+:64BIT
 net stop wampapache64
-
 net start wampapache64
+
+:32BIT
+net stop wampapache
+net start wampapache
 
 pause
