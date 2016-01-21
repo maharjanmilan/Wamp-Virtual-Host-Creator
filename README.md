@@ -10,5 +10,5 @@ If you are running this script for the first time:
 1) Open this script in a text editor and make sure that the path to Windows HOST file and Apache httpd-vhosts.conf is 
 correct.
 
-2) If your WAMP is a 32 bit version just remove 64 from the lines "net stop wampapache64" and "net start wampapache64"
+2) If your WAMP is a 32 bit version just remove 64 from the lines `net stop wampapache64` and `net start wampapache64`
 at the end of the file. 
